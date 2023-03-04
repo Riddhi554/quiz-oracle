@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;800&display=swap');
+:root {
+    --blue: #4d5b9e;
+    --black: #293264;
+    --gray: #dbdef0;
+    --lemony: rgb(236, 243, 177);
+    --lightBlue: rgb(169, 238, 250);
+    --paleBlue: #d6dbf5;
+    --green: #94d7a2;
+    --pink: #f8bcbc;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: fit-content;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    margin: auto;
+}
+.container {
+    background: url(./components/blue_blob.svg) left bottom no-repeat,
+        url(./components/lemony_blob.svg) right top no-repeat;
+    background-color: #fff;
+    width: 800px;
+    height: 700px;
+    overflow: auto;
+    padding: 100px 100px;
+    margin: auto;
+}
+.quiz-welcome {
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quiz-welcome > * {
+    text-align: center;
+    margin: 10px 0;
+}
+.quiz-welcome h1 {
+    font-weight: 600;
+}
+.btn {
+    background-color: var(--blue);
+    color: #fff;
+    width: 150px;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:active {
+    transform: scale(0.9);
+}
+.quiz-items {
+    display: flex;
+    flex-direction: column;
+}
+.quiz-items-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz-items-btns span {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 30px;
+}
+.quiz-items .btn {
+    margin: 20px auto;
+}
+.quiz-items .quiz-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid var(--gray);
+    padding: 10px 0;
+}
+.quiz-question {
+    margin-bottom: auto;
+}
+.quiz-choices span {
+    border: 1px solid var(--blue);
+    border-radius: 12px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.answer-correct {
+    background-color: var(--green);
+}
+.answer-incorrect {
+    background-color: var(--pink);
+}
+.quiz-choices span.selected {
+    background-color: var(--paleBlue);
+}
+.muted {
+    opacity: 60%;
+}

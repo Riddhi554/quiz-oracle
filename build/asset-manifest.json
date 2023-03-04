@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f69c6ae.css",
+    "main.js": "/static/js/main.a2bdeafe.js",
+    "index.html": "/index.html",
+    "static/media/blue_blob.svg": "/static/media/blue_blob.5a0801127e1ec77c80b5.svg",
+    "static/media/lemony_blob.svg": "/static/media/lemony_blob.f948b50daab66b993126.svg",
+    "main.9f69c6ae.css.map": "/static/css/main.9f69c6ae.css.map",
+    "main.a2bdeafe.js.map": "/static/js/main.a2bdeafe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f69c6ae.css",
+    "static/js/main.a2bdeafe.js"
+  ]
+}
